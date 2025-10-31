@@ -4,4 +4,5 @@ Class Book:
   author = "George Orwell"
   publication_year = 1949
   print(f"'Book' {title} by {author} published in {publication_year}.")
-  # output: Book 1984 by George Orwell published in 1949.
+  # output: Book 1984 by George Orwell published in 1949. 
+  Book.objects.create
