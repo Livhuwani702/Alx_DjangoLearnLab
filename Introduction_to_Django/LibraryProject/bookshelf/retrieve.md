@@ -9,3 +9,4 @@ Class Book:
     print(f"title = {title}")
     print(f"author = {author}")
     print(f"publication_year = {publication_year}")
+Books.objects.get
