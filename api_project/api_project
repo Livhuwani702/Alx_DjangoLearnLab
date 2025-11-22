@@ -1,0 +1,12 @@
+django-admin startproject api_project
+pip install djangorestframework
+echo "rest_framework" > INSTALLED_APPS > settings.py
+python manage.py startapp api
+echo "api" > INSTALLED_APPS > settings.py
+from django.db import models
+class Book(models.Model):
+  tittle = models.CharField(max_length=200)
+  author = models.CharField(max_length=100)
+python manage.py makemigrations
+python manage.py migrate
+pyhon manage.py runserver
