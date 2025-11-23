@@ -133,3 +133,5 @@ class BookAPIView(APIView):
 
     def get(username, password):
         return Response({'message': 'Hello, authenticated user!'})
+
+rest_framework.authtoken
