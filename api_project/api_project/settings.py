@@ -135,3 +135,5 @@ class BookAPIView(APIView):
         return Response({'message': 'Hello, authenticated user!'})
 
 rest_framework.authtoken
+rest_framework.authentication.TokenAuthentication
+
