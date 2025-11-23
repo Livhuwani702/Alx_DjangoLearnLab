@@ -10,3 +10,11 @@ class rest_framework(generics.ListAPIView):
 class rest_framework(viewsets.ModelViewSet):
      queryset = BookViewSet.objects.all()
      serializer_class = BookSerializer
+
+from rest_framework.permissions import BasePermission
+
+class IsAdminOrIsAdminUser(BasePermission):
+    def has_permission(username, password, view):
+        if request.method in ['GET', 'HEAD', 'OPTIONS']:
+            return True
+        return request.user.is_staff
