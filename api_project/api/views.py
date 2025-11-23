@@ -7,3 +7,6 @@ from .serializers import BookSerializer
 class rest_framework(generics.ListAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+class rest_framework(viewsets.ModelViewSet):
+     queryset = BookViewSet.objects.all()
+     serializer_class = BookSerializer
