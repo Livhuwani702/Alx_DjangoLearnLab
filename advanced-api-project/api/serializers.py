@@ -26,7 +26,7 @@ class AuthrSerializer(serializers.ModelSerializer):
         fields = ['name']
 
 class BookSerializer(serializers.ModelSerializer):
-    publication_year = publication_yearSerializer(=<2025=True , >2025=False) #it prevents user from requesting a book form the future
+    publication_year = publication_yearSerializer(many=True , read_only=True) #it prevents user from requesting a book form the future
 
     class Meta:
         model = Book
