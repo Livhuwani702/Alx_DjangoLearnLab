@@ -22,6 +22,8 @@ from rest_framework import serializers
 from .models import Author, Book
 
 class AuthrSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(source='name', many=True , read_only=True)
+    
     class Meta:
         model = Author
         fields = ['name']
