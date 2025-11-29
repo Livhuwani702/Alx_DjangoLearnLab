@@ -31,3 +31,8 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ['title', 'publication_year', 'author']
+
+def validate(self, data):
+        if len(data['title']) < 5:
+            raise serializers.ValidationError("Title must be at least 5 characters long.")
+        return data
