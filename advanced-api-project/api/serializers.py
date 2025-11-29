@@ -12,6 +12,7 @@ class BookSerializer(serializers.ModelSerializer):
 from .models import Author
 
 class AuthorSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(source='name', many=True , read_only=True)
 
     class Meta:
         model = Author
