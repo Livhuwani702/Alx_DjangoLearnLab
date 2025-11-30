@@ -17,10 +17,11 @@ class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, Authenticated
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 
 class BookViewSet(viewsets.modelViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
 
 ListView, DetailView, CreateView, UpdateView, DeleteView
+
 
