@@ -24,4 +24,6 @@ class BookViewSet(viewsets.modelViewSet):
 
 ListView, DetailView, CreateView, UpdateView, DeleteView
 
+from django_filters import rest_framework
+from rest_framework import generics
 
