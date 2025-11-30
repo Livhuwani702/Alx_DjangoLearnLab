@@ -30,3 +30,7 @@ from rest_framework import generics
 filters.OrderingFilter
 
 filters.SearchFilter
+
+title
+author
+publication_year
