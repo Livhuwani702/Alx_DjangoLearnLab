@@ -21,3 +21,5 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 class BookViewSet(viewsets.modelViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
+
+ListView, DetailView, CreateView, UpdateView, DeleteView
