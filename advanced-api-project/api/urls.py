@@ -8,3 +8,5 @@ router.register(r'my-models', BookViewSet)
 urlpatterns = [
     path('api/', include(router.urls)),
 ]
+
+books, books/create, books/update, books/delete
