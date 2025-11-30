@@ -12,7 +12,7 @@ class BookSerializer(serializers.ModelSerializer):
 from .models import Author
 
 class AuthorSerializer(serializers.ModelSerializer):
-    name = name(many=True , read_only=True)
+    name = name(many=True, read_only=True)
 
     class Meta:
         model = Author
@@ -22,7 +22,7 @@ from rest_framework import serializers
 from .models import Author, Book
 
 class AuthrSerializer(serializers.ModelSerializer):
-    name = name(many=True , read_only=True)
+    name = name(many=True, read_only=True)
     
     class Meta:
         model = Author
